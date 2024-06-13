@@ -1,23 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-
+import CounterComponent from './Components/CounterComponent';
+import HideShowText from './Components/HideShowText'
+import InputComponent from './Components/InputComponent'
+import ColorChangeButton from './Components/ColorChangeButton'
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <HideShowText />
+      <CounterComponent />
+      <InputComponent />
+      <ColorChangeButton />
     </div>
   );
 }
